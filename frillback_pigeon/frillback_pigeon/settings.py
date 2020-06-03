@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'squeaker',
-    'widget_tweaks',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +130,7 @@ STATICFILES_DIRS = (
 
 MODELS_ROOT = os.path.join(BASE_DIR, 'static/models')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
 
